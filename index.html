@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический Кликер</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <!-- Верхняя панель -->
+        <div class="top-panel">
+            <div class="energy-container">
+                <span class="material-icons">bolt</span>
+                <div class="energy-bar">
+                    <div id="energyFill" class="energy-fill"></div>
+                </div>
+                <span id="energyValue">100/100</span>
+            </div>
+            <div class="score-container">
+                <span class="material-icons">stars</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="main-container">
+            <button id="clickButton" class="click-button">
+                <span class="material-icons">rocket_launch</span>
+            </button>
+        </div>
+
+        <!-- Модальные окна -->
+        <div id="shopModal" class="modal">
+            <div class="modal-content">
+                <div id="upgradesList" class="upgrades-list"></div>
+            </div>
+        </div>
+
+        <!-- Нижняя навигация -->
+        <div class="bottom-nav">
+            <button id="homeButton" class="nav-button active">
+                <span class="material-icons">home</span>
+                <span>Главная</span>
+            </button>
+            <button id="friendsButton" class="nav-button">
+                <span class="material-icons">group</span>
+                <span>Друзья</span>
+            </button>
+            <button id="shopButton" class="nav-button">
+                <span class="material-icons">shopping_cart</span>
+                <span>Магазин</span>
+            </button>
+            <button id="miningButton" class="nav-button">
+                <span class="material-icons">rocket</span>
+                <span>Добыча</span>
+            </button>
+            <button id="rewardsButton" class="nav-button">
+                <span class="material-icons">emoji_events</span>
+                <span>Награды</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="config.js"></script>
+    <script src="shop.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
